@@ -24,7 +24,7 @@ Route::resource('publictestimonials', 'Home\TestimonialsControllerPublic');
 
 
 Route::resource('publicnewsletters', 'Home\NewslettersControllerPublic');
- 
+
 Route::get('/qui-sommes-nous', function () {
         return view('website.fr.qui-sommes-nous');
     });
@@ -349,7 +349,7 @@ Route::group(['prefix' => 'tours'], function (){
         return view('website.fr.tours.aventure.aventure');
     });
     Route::get('/decouverte/{categoryf}','TourControllerWeb@index');
-    
+
     /* Decouverte */
 
    /* Route::get('/decouverte', function () {
@@ -423,9 +423,9 @@ Route::group(['prefix' => 'admin'], function (){
     Route::get('/', ['as' => 'admin.index', function(){
         return view('admin.index');
     }])->middleware('auth');
-    
+
     Route::resource('comments','Admin\CommentsController');
-    
+
     Route::resource('tags', 'Admin\TagController');
     Route::get('tags/{id}/destroy', [
         'uses'  => 'Admin\TagController@destroy',
@@ -437,25 +437,25 @@ Route::group(['prefix' => 'admin'], function (){
         'uses'  => 'Admin\NewslettersController@destroy',
         'as'    => 'admin.newsletters.destroy'
     ]);
-    
+
     Route::resource('blogs', 'Admin\BlogsController');
     Route::get('blogs/{id}/destroy', [
         'uses'  => 'Admin\BlogsController@destroy',
         'as'    => 'admin.blogs.destroy'
     ]);
-    
+
     Route::resource('articles', 'Admin\ArticlesController');
     Route::get('articles/{id}/destroy', [
         'uses'  => 'Admin\ArticlesController@destroy',
         'as'    => 'admin.articles.destroy'
     ]);
-    
+
     Route::resource('galleries', 'Admin\GalleriesController');
       Route::get('galleries/{id}/{archivo}/destroy', [
         'uses'  => 'Admin\GalleriesController@destroy',
         'as'    => 'admin.galleries.destroy'
     ]);
-    
+
     Route::resource('users', 'Admin\UsersController');
     Route::get('users/{id}/destroy', [
         'uses'  => 'Admin\UsersController@destroy',
@@ -582,18 +582,16 @@ Route::get('it/blogs/{id}', [
 
 Route::group(['prefix' => '/'], function (){
     Route::get('/', function(){
-        
-          return redirect('/fr');
+
+          return redirect('/admin');
     });
      Route::get('/{lenguage}', [
         'uses'  => 'Admin\UsersController@indexPrincipal',
         'as'    => 'user.principal'
     ]);
-    
+
     Route::get('/{language}/tours/{category}/{categoryTour}','TourControllerWeb@index');
     Route::get('/{language}/tours/{tour_category}','TourControllerWeb@indexCategory');
 
     Route::get('/{language}/listTestimonials','TourControllerWeb@listTestimonials');
 });
-
-    
