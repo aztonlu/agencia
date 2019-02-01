@@ -1,10 +1,9 @@
 <footer class="main-footer">
     <div class="pull-right hidden-xs">
-        <b>Version</b> 2.8.3
+        <b>Version</b> beta - demo
     </div>
-    Copyright &copy; 2017 <strong><a href="http://terandes.com" class="text-green">Tierra de los Andes</a> - </strong> Todos los derechos reservados
+    Copyright &copy; 2019 <strong><a href="" class="text-green">Demo</a> </strong>
 </footer>
 
 </div>
 <!-- ./wrapper -->
-

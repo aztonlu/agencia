@@ -26,8 +26,8 @@
                     <!-- small box -->
                     <div class="small-box bg-green">
                         <div class="inner">
-                            <h3>01</h3>
-                            <p>Registrar usuario</p>
+                            <h2>Registrar</h2>
+                            <p>Usuario</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-person-add"></i>
@@ -128,7 +128,7 @@
                 </div>
                 <!-- ./col -->
 
-                
+
                 <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-purple">
                         <div class="inner">

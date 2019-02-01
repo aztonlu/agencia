@@ -37,7 +37,6 @@
                                     <th>Nombres</th>
                                     <th>E-mail</th>
                                     <th>Contraseña</th>
-                                    <th>Idioma</th>
                                     <th>Tipo</th>
                                     <th>Acción</th>
                                 </tr>
@@ -50,7 +49,7 @@
                                         <td>{{$user->name}}</td>
                                         <td>{{$user->email}}</td>
                                         <td><span class="label label-danger"><span class="fa fa-lock"></span>&nbsp; Privado</span></td>
-                                        <td>{{$user->language}}</td>
+                                        
                                         <td>
                                             @if($user->type == 'admin')
                                                 <span class="label label-success">Administrador</span>
@@ -88,4 +87,3 @@
     </div>
 
 @endsection
-

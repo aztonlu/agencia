@@ -49,5 +49,5 @@
             </div>
         </div>
     </div>
-    <div class="container copy"><span>&copy;</span> Copyright Terandes | Todos los derechos reservados - 2017</div>
+    <div class="container copy"><span>&copy;</span> Copyright 2019 - version demo </div>
 </footer>
